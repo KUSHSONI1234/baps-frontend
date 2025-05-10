@@ -1,0 +1,20 @@
+<nav class="navbar">
+  <div class="logo"> BAPS BAL MANDAL </div>
+  
+  <div class="hamburger" (click)="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div [class.active]="isMenuOpen" class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Event</a>
+    <a href="#">Posts</a>
+    <a href="#">Notifications</a>
+    <a href="#">About</a>
+    <a href="#">Install App</a>
+    <a href="#">Profile</a>
+    <a href="#"><button class="login-btn">Login</button></a>
+  </div>
+</nav>

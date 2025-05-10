@@ -1,0 +1,80 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:70px;
+    align-items: center;
+    padding: 1rem 6rem;
+    /* background-color: #FFFFFF; */
+    background-color: #137ebe;
+    background-image: linear-gradient(160deg, #1e1e51c2 0%, #5094cc 100%);
+    color: white;
+  }
+
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    font-size: 19px;
+  }
+
+  .nav-links a:hover {
+    color: #00ffff;
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+
+  .nav-links .login-btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #111;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+}
